@@ -1,0 +1,217 @@
+@model SitefinityWebApp.Mvc.Models.PageCompareWidgetModel
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<style>
+    .glyphicon-refresh-animate {
+        -animation: spin .7s infinite linear;
+        -webkit-animation: spin2 .7s infinite linear;
+    }
+
+    @@-webkit-keyframes spin2 {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+
+        to {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    @@keyframes spin {
+        from {
+            transform: scale(1) rotate(0deg);
+        }
+
+        to {
+            transform: scale(1) rotate(360deg);
+        }
+    }
+a { color:blue } /* Globally */
+
+/* Each state */
+
+a:visited { text-decoration: none; color:blue; }
+a:hover { text-decoration: none; color:blue; }
+a:focus { text-decoration: none; color:blue; }
+a:hover, a:active { text-decoration: none; color:blue }
+</style>
+
+<br />
+<br /><br /><br />
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class=" container">
+                <div class="col-xs-12" style="height:50px;"></div>
+            </div>
+            <div class="container" style="font-size:15px">
+                <div class="row">
+                    <div class="col-md-2">
+                        @Html.DropDownListFor(m => m.SelectedPage, Model.PageItems, "Select a page", new { @id = "pageId", @class = "form-control" })
+                    </div>
+                    <div class="col-md-2">
+                        @Html.DropDownListFor(m => m.SelectedSiteFirst, Model.SiteItemsFirst, "Select a site", new { @id = "site1Id", @class = "form-control", disabled = "disabled" })
+                    </div>
+                    <div id="site2Col" class="col-md-2">
+
+                        <select id="site2" class="form-control" disabled><option selected="selected" disabled="disabled">Select a site</option></select>
+                    </div>
+                    <div id="site3Col" class="col-md-2">
+                        <select id="site3" class="form-control" disabled><option selected="selected">Select a site</option></select>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12" style="padding-top:10px;">
+                        <input disabled id="btnAjax" type="button" value="Compare" class="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
+            <div class=" container">
+                <div class="col-xs-12" style="height:50px;"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="fields" style="padding-left:400px"></div>
+<div id="loading" hidden class="row text-center" style="padding-top:100px">
+    <div class="col-md-12">
+        <button class="btn btn-lg btn-warning"><span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span> Loading...</button>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    $("#pageId option:selected").attr('disabled', 'disabled')
+       
+
+    $('#site2').change(function () {
+        if ($('#site3').is(':visible')) {
+            var choosenSite = $('#site2 option:selected').text();
+            var choosenSiteParent = $('#site2 option:selected').data('siteObj').ParentSite
+            $.getJSON("/pagecompare/GetSitesWithParam", { siteName: choosenSite, myParentSiteName: choosenSiteParent },
+                function (data) {
+                    var options = $('#site3');
+                    var defaultOption = options[0][0]
+                    $('#site3').html("");
+
+                    options.append(defaultOption);
+                    $.each(data, function () {
+                        var siteObj = {
+                            Id: this.SiteId,
+                            Name: this.Name,
+                            ParentSite: this.ParentSite,
+                            SiteToken: this.SiteRootNodeId
+                        };
+                        options.append($("<option />").val(this.SiteId).text(this.Name).data('siteObj', siteObj));
+                    });
+                    $('#site3').prop('disabled', false);
+                    $('#btnAjax').prop('disabled', false);
+                }
+            );
+        }
+    });
+
+    $('#pageId').change(function () {
+        if ($('#site1Id > option').length <= 1) {
+            $.getJSON("/pagecompare/GetSites",
+                function (data) {
+                    $("#site1Id option:selected").attr('disabled', 'disabled')
+                    var options = $('#site1Id');
+                    var defaultOption = options[0][0]
+                    $('#site1Id').html("");
+                    options.append(defaultOption);
+
+                    $.each(data, function () {
+                        var siteObj = {
+                            Id: this.SiteId,
+                            Name: this.Name,
+                            ParentSite: this.ParentSite,
+                            SiteToken: this.SiteRootNodeId
+                        };
+                        var newOption = $("<option />").val(this.SiteId).text(this.Name);
+                        newOption.data('siteObj', siteObj);
+                        options.append(newOption);
+                    });
+                    $('#site1Id').prop('disabled', false);
+                }
+            );
+        }
+    });
+
+
+    $('#site1Id').change(function () {
+        var choosenSite = $('#site1Id option:selected').text();
+        var choosenSiteParent = $('#site1Id option:selected').data('siteObj').ParentSite
+        $.getJSON("/pagecompare/GetSitesWithParam", { siteName: choosenSite, myParentSiteName: choosenSiteParent },
+            function (data) {
+                var options = $('#site2');
+                var defaultOption = options[0][0]
+                $('#site2').html("");
+
+                options.append(defaultOption);
+                $.each(data, function () {
+                    var siteObj = {
+                        Id: this.SiteId,
+                        Name: this.Name,
+                        ParentSite: this.ParentSite,
+                        SiteToken: this.SiteRootNodeId
+                    };
+                    options.append($("<option />").val(this.SiteId).text(this.Name).data('siteObj', siteObj));
+                });
+                $('#site2').prop('disabled', false);
+            }
+        );
+
+    });
+
+
+
+    $('#btnAjax').click(function () {
+
+        $('#fields').hide();
+        $('#loading').show();
+        var selectedPage = document.getElementById("pageId").options[document.getElementById("pageId").selectedIndex].text;
+        var site1 = $('#site1Id option:selected').data('siteObj').SiteToken
+        var site2 = $('#site2 option:selected').data('siteObj').SiteToken
+        var site3 = undefined;
+        if ($('#site3 option:selected').index() !== 0) {
+            site3 = $('#site3 option:selected').data('siteObj').SiteToken
+        }
+
+        var model = {
+            'Page': selectedPage,
+            'SiteRootNodeId1': site1,
+            'SiteRootNodeId2': site2,
+            'SiteRootNodeId3': site3,
+        };
+
+        $.ajax({
+            url: '/pagecompare/GetFields',
+            contentType: 'application/json; charset=utf-8',
+            data: model,
+            type: 'GET'
+
+        })
+        .success(function (result) {
+            $('#fields').show();
+            $('#loading').hide();
+            $('#fields').html(result);
+        })
+        .error(function (xhr, status) {
+            alert(xhr);
+        })
+    });
+</script>

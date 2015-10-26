@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ConfigControl.ascx.cs" Inherits="SitefinityWebApp.Custom.Widgets.ConfigControl" %>
+<asp:Literal ID="ParentLiteral" runat="server"></asp:Literal>

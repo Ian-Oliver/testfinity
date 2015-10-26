@@ -1,0 +1,513 @@
+----------------------------------------
+Timestamp: 10/23/2015 5:26:40 PM
+
+Message: HandlingInstanceID: eb5aa9c5-e5c0-4ad6-aeab-eb1fc05e5e30
+An exception of type 'System.Security.Cryptography.CryptographicException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+10/23/2015 13:26:40
+Type : System.Security.Cryptography.CryptographicException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Bad Data.
+
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ThrowCryptographicException(Int32)
+HResult : -2146893819
+Stack Trace :    at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at System.IO.Stream.Dispose()
+   at Telerik.Sitefinity.Security.SecurityManager.DecryptData(Byte[] data)
+   at Telerik.Sitefinity.Security.Claims.SitefinityCookieTransform.Decode(Byte[] encoded)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms(Byte[] cookie, Boolean outbound)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(Byte[] token, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionAuthenticationModule.ReadToken(Byte[] sessionCookie)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/23/2015 5:26:40 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-9-130900947728109480
+ThreadIdentity : 
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/WebResource.axd?d=fVdxL5NIEJBeekpfggg4JLrDlIOu3ZlQFnY7D04FLQMcfk5DShsGZv2Z9N_TvZV3J0ozUelVxwr0zzU6tXKuAbaEc_Q0xE42iB-5mWMarDEGRysH7XxIKgJ6uwlFjRagAI17_RQJT8M6Z6GKV9cM2T5OYz0XHD7FhJfLfPec3imp8nJ4R5tlVmydt5IqUYujVXfzGCT3rpONRmhqOXZCSw2&t=635768760520000000
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-9-130900947728109480
+
+ProcessId: 6764
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:9264
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 5:26:40 PM
+
+Message: HandlingInstanceID: 9049d37e-fda1-4c8e-8d89-2303bf188e49
+An exception of type 'System.Security.Cryptography.CryptographicException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+10/23/2015 13:26:40
+Type : System.Security.Cryptography.CryptographicException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Bad Data.
+
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ThrowCryptographicException(Int32)
+HResult : -2146893819
+Stack Trace :    at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at System.IO.Stream.Dispose()
+   at Telerik.Sitefinity.Security.SecurityManager.DecryptData(Byte[] data)
+   at Telerik.Sitefinity.Security.Claims.SitefinityCookieTransform.Decode(Byte[] encoded)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms(Byte[] cookie, Boolean outbound)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(Byte[] token, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionAuthenticationModule.ReadToken(Byte[] sessionCookie)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/23/2015 5:26:40 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-9-130900947728109480
+ThreadIdentity : 
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/Sitefinity/Services/Pages/ZoneEditorService.svc/Page/61121525-8d1a-6e2c-88ca-ff0000dee35a/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-9-130900947728109480
+
+ProcessId: 6764
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:11288
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 5:26:40 PM
+
+Message: HandlingInstanceID: 035d03a5-2975-4d25-a4a8-c1563854e421
+An exception of type 'System.Security.Cryptography.CryptographicException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+10/23/2015 13:26:40
+Type : System.Security.Cryptography.CryptographicException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Bad Data.
+
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ThrowCryptographicException(Int32)
+HResult : -2146893819
+Stack Trace :    at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at System.IO.Stream.Dispose()
+   at Telerik.Sitefinity.Security.SecurityManager.DecryptData(Byte[] data)
+   at Telerik.Sitefinity.Security.Claims.SitefinityCookieTransform.Decode(Byte[] encoded)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms(Byte[] cookie, Boolean outbound)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(Byte[] token, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionAuthenticationModule.ReadToken(Byte[] sessionCookie)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/23/2015 5:26:40 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-9-130900947728109480
+ThreadIdentity : 
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/sitefinity
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-9-130900947728109480
+
+ProcessId: 6764
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:11284
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 5:26:40 PM
+
+Message: HandlingInstanceID: 7dd71220-6c15-448c-94ff-ff239f2d86b9
+An exception of type 'System.Security.Cryptography.CryptographicException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+10/23/2015 13:26:40
+Type : System.Security.Cryptography.CryptographicException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Specified key is a known weak key for 'TripleDES' and cannot be used.
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Security.Cryptography.ICryptoTransform CreateDecryptor(Byte[], Byte[])
+HResult : -2146233296
+Stack Trace :    at System.Security.Cryptography.TripleDESCryptoServiceProvider.CreateDecryptor(Byte[] rgbKey, Byte[] rgbIV)
+   at Telerik.Sitefinity.Security.SecurityManager.DecryptData(Byte[] data)
+   at Telerik.Sitefinity.Security.Claims.SitefinityCookieTransform.Decode(Byte[] encoded)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms(Byte[] cookie, Boolean outbound)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(Byte[] token, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionAuthenticationModule.ReadToken(Byte[] sessionCookie)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/23/2015 5:26:40 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-9-130900947728109480
+ThreadIdentity : 
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/WebResource.axd?d=ucA_zNGfFF3c4bX4TQu6s9FfyjLC0zKVU3KJtKbSKu9y9NlIakpihmsjw3YjP3kuzSwJudPHoQvldt00O55EEgmkXD9Z0pinFDXG1OR4-_58RbkAClahDWrggooEjJNlSa1M7Uu_7vfLsVRqBYFU-2KbUnK8Tk6bUehG4Flavs1Xt_G2HJcUlgMeVUjGHXtRdAStEse6s2rN3mHfoM_-qA2&t=635768760520000000
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-9-130900947728109480
+
+ProcessId: 6764
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:8596
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 5:26:40 PM
+
+Message: HandlingInstanceID: d5487928-77d1-49ab-8bce-5f4120b95d34
+An exception of type 'System.Security.Cryptography.CryptographicException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+10/23/2015 13:26:40
+Type : System.Security.Cryptography.CryptographicException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Bad Data.
+
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ThrowCryptographicException(Int32)
+HResult : -2146893819
+Stack Trace :    at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at System.IO.Stream.Dispose()
+   at Telerik.Sitefinity.Security.SecurityManager.DecryptData(Byte[] data)
+   at Telerik.Sitefinity.Security.Claims.SitefinityCookieTransform.Decode(Byte[] encoded)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms(Byte[] cookie, Boolean outbound)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(Byte[] token, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionAuthenticationModule.ReadToken(Byte[] sessionCookie)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/23/2015 5:26:40 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-9-130900947728109480
+ThreadIdentity : 
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/WebResource.axd?d=HdS8FrTMu7FkBtnHk_xX8ALLjNd2N1-_sVBPUmwF1Y2cCQUajHyFSBpPOksk4d_1gxVnPWen5BUcRGdjuwouBGViz_4xlC8qZUibUIWhruu4cY7DuUgQ6Mf0yD1V-j4WDdCMQIj3oqrnCaKZs8pjvq3Rv-BlQ85kz2YmCfBRoo5o5DZ7vTXsmeiMpDGGzxGv_BPUQOkDgz4boIjo5UwLbg2&t=635768760520000000
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-9-130900947728109480
+
+ProcessId: 6764
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:11288
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 5:26:40 PM
+
+Message: HandlingInstanceID: 394b8dfa-64c8-41ca-9284-95ff62c43493
+An exception of type 'System.Security.Cryptography.CryptographicException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+10/23/2015 13:26:40
+Type : System.Security.Cryptography.CryptographicException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Bad Data.
+
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ThrowCryptographicException(Int32)
+HResult : -2146893819
+Stack Trace :    at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at System.IO.Stream.Dispose()
+   at Telerik.Sitefinity.Security.SecurityManager.DecryptData(Byte[] data)
+   at Telerik.Sitefinity.Security.Claims.SitefinityCookieTransform.Decode(Byte[] encoded)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms(Byte[] cookie, Boolean outbound)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(Byte[] token, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionAuthenticationModule.ReadToken(Byte[] sessionCookie)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/23/2015 5:26:40 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-9-130900947728109480
+ThreadIdentity : 
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/WebResource.axd?d=vSaPYGh-Ep6RqR2kcocnZVm3h1e6po6N5tnXGysrWTCP-h-kfBOU7pkxcgFCeJA99RvOTwkXTF0UeKFqn9K66thfF_ftmIj_5vbj9H2-ttOP32ThRi6cC2UQXivjJJEFSbfOokeT9X3Joen2GBYlb7FBBmSGbQkaL4mVp1IRbUZKxKfiq-dNafMMQNkN6KwOQLJfzl117mNR5oDBfa63Vw2&t=635768760520000000
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-9-130900947728109480
+
+ProcessId: 6764
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:9264
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 5:26:40 PM
+
+Message: HandlingInstanceID: 77f82292-0c3d-4bb0-bd07-962fe561167d
+An exception of type 'System.Security.Cryptography.CryptographicException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+10/23/2015 13:26:40
+Type : System.Security.Cryptography.CryptographicException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Bad Data.
+
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ThrowCryptographicException(Int32)
+HResult : -2146893819
+Stack Trace :    at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at System.IO.Stream.Dispose()
+   at Telerik.Sitefinity.Security.SecurityManager.DecryptData(Byte[] data)
+   at Telerik.Sitefinity.Security.Claims.SitefinityCookieTransform.Decode(Byte[] encoded)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms(Byte[] cookie, Boolean outbound)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(Byte[] token, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionAuthenticationModule.ReadToken(Byte[] sessionCookie)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/23/2015 5:26:40 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-9-130900947728109480
+ThreadIdentity : 
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/WebResource.axd?d=EEc6PRzX09FbPU_X3eZIdCklVyXw_AvEG6DhYrOgoqJzb0R9rySt8fHdG4pZSfpXNDfaj8IR9JWpF_dR2ue6Yb5YbU1ZCWGmRbPGGAjgHdBD8Af8WWar7jUjJ5ZzxovQYzwF0eduKjnh8DyPtb5CTEYLrN7H2FMqAyfo3X-VzSan804jNpSWbUUm4sm-N50R180xEu3XiJ7NYRY73Lzrvg2&t=635768760520000000
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-9-130900947728109480
+
+ProcessId: 6764
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:8596
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 5:26:40 PM
+
+Message: HandlingInstanceID: 1af7e605-df52-469b-9d34-ba4adee49581
+An exception of type 'System.Security.Cryptography.CryptographicException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+10/23/2015 13:26:40
+Type : System.Security.Cryptography.CryptographicException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Bad Data.
+
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ThrowCryptographicException(Int32)
+HResult : -2146893819
+Stack Trace :    at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at System.IO.Stream.Dispose()
+   at Telerik.Sitefinity.Security.SecurityManager.DecryptData(Byte[] data)
+   at Telerik.Sitefinity.Security.Claims.SitefinityCookieTransform.Decode(Byte[] encoded)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms(Byte[] cookie, Boolean outbound)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(Byte[] token, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionAuthenticationModule.ReadToken(Byte[] sessionCookie)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/23/2015 5:26:40 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-9-130900947728109480
+ThreadIdentity : 
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/WebResource.axd?d=ECIeZKblIj2lLlRQm9aYZlH-BLOe4tSf5sT4nsocTEYE87iNORWyJh13AkW910RY4U166lCdvVQHIrJuZVba2mic4QUF3R2h8EIp92yvq90YLIeDTpHuTqaLn0p9vD2Iil1KKUg4rXdUnC7zxImee9o2hBU9jMr_4dA5Be5ZVt4j1Sy4JMvqF8bfHlTl32U8cx2WIb35NXVnSJiFEdzKUQ2&t=635768760520000000
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-9-130900947728109480
+
+ProcessId: 6764
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:11284
+
+Extended Properties: 
+----------------------------------------

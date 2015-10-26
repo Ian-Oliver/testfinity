@@ -1,0 +1,176 @@
+----------------------------------------
+Timestamp: 10/23/2015 5:29:56 PM
+
+Message: Shutting down threadpool...
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 5:29:57 PM
+
+Message: Background task scheduler shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 5:29:57 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 5:29:57 PM
+
+Message: Thread pool 'BackgroundTasksService': Shutdown of thread pool completed. Threads aborted.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 5:38:27 PM
+
+Message: Shutting down threadpool...
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 5:38:27 PM
+
+Message: Thread pool 'BackgroundTasksService': Shutdown of thread pool completed. All currently running threads will finish their work and stop.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 5:38:28 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 5:38:28 PM
+
+Message: Background task scheduler shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 5:38:28 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 5:38:28 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 5:38:28 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 5:38:30 PM
+
+Message: Shutting down threadpool...
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 5:38:30 PM
+
+Message: Thread pool 'BackgroundTasksService': Shutdown of thread pool completed. Threads aborted.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 8:05:25 PM
+
+Message: System.InvalidCastException: Unable to cast object of type 'Telerik.Microsoft.Practices.Unity.InterceptionExtension.ParameterCollection' to type 'Telerik.Sitefinity.Pages.Model.PageNode'.
+   at DynamicModule.ns.Wrapped_OpenAccessPageProvider_e526d623158c49ce8546159b997204e7.OnExecuted(ExecutedEventArgs args)
+   at Telerik.Sitefinity.Data.DataEventsCallHandler.Invoke(IMethodInvocation input, GetNextHandlerDelegate getNext)
+   at Telerik.Sitefinity.Security.SitefinityAuthorizationCallHandler.Invoke(IMethodInvocation input, GetNextHandlerDelegate getNext)
+   at Telerik.Microsoft.Practices.Unity.InterceptionExtension.HandlerPipeline.Invoke(IMethodInvocation input, InvokeHandlerDelegate target)
+   at Telerik.Microsoft.Practices.Unity.InterceptionExtension.PolicyInjectionBehavior.Invoke(IMethodInvocation input, GetNextInterceptionBehaviorDelegate getNext)
+   at Telerik.Microsoft.Practices.Unity.InterceptionExtension.InterceptionBehaviorPipeline.Invoke(IMethodInvocation input, InvokeInterceptionBehaviorDelegate target)
+   at DynamicModule.ns.Wrapped_OpenAccessPageProvider_e526d623158c49ce8546159b997204e7.GetParentType(Type childType)
+   at Telerik.Sitefinity.Web.UI.ContentUI.Views.Backend.Detail.DetailFormView.DetermineServiceUrl(Type contentType, IDetailFormViewDefinition definition)
+   at Telerik.Sitefinity.Web.UI.ContentUI.Views.Backend.Detail.DetailFormView.InitializeControls(GenericContainer container, IContentViewDefinition definition)
+   at Telerik.Sitefinity.Web.UI.ContentUI.Views.Backend.ViewBase.CreateChildControls()
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 8:10:19 PM
+
+Message: System.InvalidCastException: Unable to cast object of type 'System.RuntimeType' to type 'Telerik.Sitefinity.Pages.Model.PageNode'.
+   at DynamicModule.ns.Wrapped_OpenAccessPageProvider_e526d623158c49ce8546159b997204e7.OnExecuted(ExecutedEventArgs args)
+   at Telerik.Sitefinity.Data.DataEventsCallHandler.Invoke(IMethodInvocation input, GetNextHandlerDelegate getNext)
+   at Telerik.Sitefinity.Security.SitefinityAuthorizationCallHandler.Invoke(IMethodInvocation input, GetNextHandlerDelegate getNext)
+   at Telerik.Microsoft.Practices.Unity.InterceptionExtension.HandlerPipeline.Invoke(IMethodInvocation input, InvokeHandlerDelegate target)
+   at Telerik.Microsoft.Practices.Unity.InterceptionExtension.PolicyInjectionBehavior.Invoke(IMethodInvocation input, GetNextInterceptionBehaviorDelegate getNext)
+   at Telerik.Microsoft.Practices.Unity.InterceptionExtension.InterceptionBehaviorPipeline.Invoke(IMethodInvocation input, InvokeInterceptionBehaviorDelegate target)
+   at DynamicModule.ns.Wrapped_OpenAccessPageProvider_e526d623158c49ce8546159b997204e7.GetParentType(Type childType)
+   at Telerik.Sitefinity.Web.UI.ContentUI.Views.Backend.Detail.DetailFormView.DetermineServiceUrl(Type contentType, IDetailFormViewDefinition definition)
+   at Telerik.Sitefinity.Web.UI.ContentUI.Views.Backend.Detail.DetailFormView.InitializeControls(GenericContainer container, IContentViewDefinition definition)
+   at Telerik.Sitefinity.Web.UI.ContentUI.Views.Backend.ViewBase.CreateChildControls()
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 8:26:14 PM
+
+Message: System.NullReferenceException: Object reference not set to an instance of an object.
+   at DynamicModule.ns.Wrapped_OpenAccessPageProvider_e526d623158c49ce8546159b997204e7.OnExecuted(ExecutedEventArgs args)
+   at Telerik.Sitefinity.Data.DataEventsCallHandler.Invoke(IMethodInvocation input, GetNextHandlerDelegate getNext)
+   at Telerik.Sitefinity.Security.SitefinityAuthorizationCallHandler.Invoke(IMethodInvocation input, GetNextHandlerDelegate getNext)
+   at Telerik.Microsoft.Practices.Unity.InterceptionExtension.HandlerPipeline.Invoke(IMethodInvocation input, InvokeHandlerDelegate target)
+   at Telerik.Microsoft.Practices.Unity.InterceptionExtension.PolicyInjectionBehavior.Invoke(IMethodInvocation input, GetNextInterceptionBehaviorDelegate getNext)
+   at Telerik.Microsoft.Practices.Unity.InterceptionExtension.InterceptionBehaviorPipeline.Invoke(IMethodInvocation input, InvokeInterceptionBehaviorDelegate target)
+   at DynamicModule.ns.Wrapped_OpenAccessPageProvider_e526d623158c49ce8546159b997204e7.GetParentType(Type childType)
+   at Telerik.Sitefinity.Web.UI.ContentUI.Views.Backend.Detail.DetailFormView.DetermineServiceUrl(Type contentType, IDetailFormViewDefinition definition)
+   at Telerik.Sitefinity.Web.UI.ContentUI.Views.Backend.Detail.DetailFormView.InitializeControls(GenericContainer container, IContentViewDefinition definition)
+   at Telerik.Sitefinity.Web.UI.ContentUI.Views.Backend.ViewBase.CreateChildControls()
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 8:27:33 PM
+
+Message: System.NullReferenceException: Object reference not set to an instance of an object.
+   at DynamicModule.ns.Wrapped_OpenAccessPageProvider_e526d623158c49ce8546159b997204e7.OnExecuted(ExecutedEventArgs args)
+   at Telerik.Sitefinity.Data.DataEventsCallHandler.Invoke(IMethodInvocation input, GetNextHandlerDelegate getNext)
+   at Telerik.Sitefinity.Security.SitefinityAuthorizationCallHandler.Invoke(IMethodInvocation input, GetNextHandlerDelegate getNext)
+   at Telerik.Microsoft.Practices.Unity.InterceptionExtension.HandlerPipeline.Invoke(IMethodInvocation input, InvokeHandlerDelegate target)
+   at Telerik.Microsoft.Practices.Unity.InterceptionExtension.PolicyInjectionBehavior.Invoke(IMethodInvocation input, GetNextInterceptionBehaviorDelegate getNext)
+   at Telerik.Microsoft.Practices.Unity.InterceptionExtension.InterceptionBehaviorPipeline.Invoke(IMethodInvocation input, InvokeInterceptionBehaviorDelegate target)
+   at DynamicModule.ns.Wrapped_OpenAccessPageProvider_e526d623158c49ce8546159b997204e7.GetParentType(Type childType)
+   at Telerik.Sitefinity.Web.UI.ContentUI.Views.Backend.Detail.DetailFormView.DetermineServiceUrl(Type contentType, IDetailFormViewDefinition definition)
+   at Telerik.Sitefinity.Web.UI.ContentUI.Views.Backend.Detail.DetailFormView.InitializeControls(GenericContainer container, IContentViewDefinition definition)
+   at Telerik.Sitefinity.Web.UI.ContentUI.Views.Backend.ViewBase.CreateChildControls()
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/23/2015 8:31:44 PM
+
+Message: Telerik.Sitefinity.SitefinityExceptions.ItemNotFoundException: You are trying to access item that no longer exists. The most probable reason is that it has been deleted by another user.
+   at DynamicModule.ns.Wrapped_OpenAccessPageProvider_e526d623158c49ce8546159b997204e7.OnExecuted(ExecutedEventArgs args)
+   at Telerik.Sitefinity.Data.DataEventsCallHandler.Invoke(IMethodInvocation input, GetNextHandlerDelegate getNext)
+   at Telerik.Sitefinity.Security.SitefinityAuthorizationCallHandler.Invoke(IMethodInvocation input, GetNextHandlerDelegate getNext)
+   at Telerik.Microsoft.Practices.Unity.InterceptionExtension.HandlerPipeline.Invoke(IMethodInvocation input, InvokeHandlerDelegate target)
+   at Telerik.Microsoft.Practices.Unity.InterceptionExtension.PolicyInjectionBehavior.Invoke(IMethodInvocation input, GetNextInterceptionBehaviorDelegate getNext)
+   at Telerik.Microsoft.Practices.Unity.InterceptionExtension.InterceptionBehaviorPipeline.Invoke(IMethodInvocation input, InvokeInterceptionBehaviorDelegate target)
+   at DynamicModule.ns.Wrapped_OpenAccessPageProvider_e526d623158c49ce8546159b997204e7.GetParentType(Type childType)
+   at Telerik.Sitefinity.Web.UI.ContentUI.Views.Backend.Detail.DetailFormView.DetermineServiceUrl(Type contentType, IDetailFormViewDefinition definition)
+   at Telerik.Sitefinity.Web.UI.ContentUI.Views.Backend.Detail.DetailFormView.InitializeControls(GenericContainer container, IContentViewDefinition definition)
+   at Telerik.Sitefinity.Web.UI.ContentUI.Views.Backend.ViewBase.CreateChildControls()
+
+
+----------------------------------------

@@ -1,0 +1,56 @@
+----------------------------------------
+Timestamp: 10/13/2015 7:07:43 PM
+
+Message: HandlingInstanceID: 6c99f233-c8be-405d-afa8-b9f1defc3673
+An exception of type 'System.NullReferenceException' occurred and was caught.
+-----------------------------------------------------------------------------
+10/13/2015 15:07:43
+Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Object reference not set to an instance of an object.
+Source : Telerik.Sitefinity
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void VerifySectionRegistered(System.Type, System.String)
+HResult : -2147467261
+Stack Trace :    at Telerik.Sitefinity.Configuration.Config.VerifySectionRegistered(Type sectionType, String sectionName)
+   at Telerik.Sitefinity.Configuration.Config.GetSectionInternal(Type sectionType, Boolean safeMode, String sectionName)
+   at Telerik.Sitefinity.Configuration.Config.GetSectionPrivate(Type sectionType, Boolean safeMode, String sectionName)
+   at Telerik.Sitefinity.Configuration.Config.GetSectionPrivate[TSection](Boolean safeMode)
+   at Telerik.Sitefinity.Localization.ResourceManager.get_ProvidersSettings()
+   at Telerik.Sitefinity.Data.ManagerBase`1.GetProvidersSettings()
+   at Telerik.Sitefinity.Data.ManagerBase`1.Initialize()
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/13/2015 7:07:43 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-2-130892368515448989
+ThreadIdentity : PRODCEAD\jz3350
+WindowsIdentity : PRODCEAD\jz3350
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90030
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-2-130892368515448989
+
+ProcessId: 5660
+
+Process Name: C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\Microsoft.VisualStudio.Web.Host.exe
+
+Thread Name: 
+
+Win32 ThreadId:1488
+
+Extended Properties: 
+----------------------------------------

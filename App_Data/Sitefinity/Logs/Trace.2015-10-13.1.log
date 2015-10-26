@@ -1,0 +1,426 @@
+----------------------------------------
+Timestamp: 10/12/2015 6:05:33 PM
+
+Message: Operation: 'ModelReset'. Parameters: 'notify:True'. Reason: 'MetaDataChange|InvalidatedModules:Telerik.Sitefinity.Security.Data.OpenAccessProfileProvider'. User: 'Anonymous'. StackTrace: '
+Telerik.Sitefinity.Data.OA.OpenAccessConnection: Void ResetModel(Telerik.Sitefinity.Services.OperationReason, Boolean)
+Telerik.Sitefinity.Data.TransactionManager: Void CommitTransaction(System.String)
+Telerik.Sitefinity.Abstractions.SiteInitializer: Void InstallDefaults()
+Telerik.Sitefinity.Services.SystemManager: Boolean Initialize()
+Telerik.Sitefinity.Web.UI.Backend.StartupWizard: Void wizard_FinishButtonClick(System.Object, Telerik.Sitefinity.Web.UI.Backend.InternalWizardNavigationEventArgs)
+Telerik.Sitefinity.Web.UI.Backend.InternalWizard: Void OnFinishButtonClick(Telerik.Sitefinity.Web.UI.Backend.InternalWizardNavigationEventArgs)
+Telerik.Sitefinity.Web.UI.Backend.InternalWizard: Boolean OnBubbleEvent(System.Object, System.EventArgs)
+System.Web.UI.Control: Void RaiseBubbleEvent(System.Object, System.EventArgs)
+System.Web.UI.Page: Void ProcessRequestMain(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest()
+System.Web.UI.Page: Void ProcessRequest(System.Web.HttpContext)
+System.Web.HttpApplication+CallHandlerExecutionStep: Void System.Web.HttpApplication.IExecutionStep.Execute()
+System.Web.HttpApplication: System.Exception ExecuteStep(IExecutionStep, Boolean ByRef)
+System.Web.HttpApplication+ApplicationStepManager: Void ResumeSteps(System.Exception)
+System.Web.HttpApplication: System.IAsyncResult System.Web.IHttpAsyncHandler.BeginProcessRequest(System.Web.HttpContext, System.AsyncCallback, System.Object)
+System.Web.HttpRuntime: Void ProcessRequestInternal(System.Web.HttpWorkerRequest)
+System.Web.HttpRuntime: Void ProcessRequestNoDemand(System.Web.HttpWorkerRequest)
+System.Web.HttpRuntime: Void ProcessRequest(System.Web.HttpWorkerRequest)
+Telerik.Utilities.Cassini.Host: Void ProcessRequest(Telerik.Utilities.Cassini.Connection)'.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/12/2015 6:05:54 PM
+
+Message: Operation: 'ModelReset'. Parameters: 'notify:True'. Reason: 'MetaDataChange|InvalidatedModules:Telerik.Sitefinity.Modules.Libraries.Data.OpenAccessLibrariesProvider'. User: 'Anonymous'. StackTrace: '
+Telerik.Sitefinity.Data.OA.OpenAccessConnection: Void ResetModel(Telerik.Sitefinity.Services.OperationReason, Boolean)
+Telerik.Sitefinity.Data.TransactionManager: Void CommitTransaction(System.String)
+Telerik.Sitefinity.Services.SystemManager: Telerik.Sitefinity.Services.IModule InitializeModule(Telerik.Sitefinity.Services.ModuleSettings, Telerik.Sitefinity.Services.InstallContext, System.Nullable`1[System.Boolean], Boolean)
+Telerik.Sitefinity.Services.SystemManager: Boolean Initialize()
+Telerik.Sitefinity.Web.UI.Backend.StartupWizard: Void wizard_FinishButtonClick(System.Object, Telerik.Sitefinity.Web.UI.Backend.InternalWizardNavigationEventArgs)
+Telerik.Sitefinity.Web.UI.Backend.InternalWizard: Void OnFinishButtonClick(Telerik.Sitefinity.Web.UI.Backend.InternalWizardNavigationEventArgs)
+Telerik.Sitefinity.Web.UI.Backend.InternalWizard: Boolean OnBubbleEvent(System.Object, System.EventArgs)
+System.Web.UI.Control: Void RaiseBubbleEvent(System.Object, System.EventArgs)
+System.Web.UI.Page: Void ProcessRequestMain(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest()
+System.Web.UI.Page: Void ProcessRequest(System.Web.HttpContext)
+System.Web.HttpApplication+CallHandlerExecutionStep: Void System.Web.HttpApplication.IExecutionStep.Execute()
+System.Web.HttpApplication: System.Exception ExecuteStep(IExecutionStep, Boolean ByRef)
+System.Web.HttpApplication+ApplicationStepManager: Void ResumeSteps(System.Exception)
+System.Web.HttpApplication: System.IAsyncResult System.Web.IHttpAsyncHandler.BeginProcessRequest(System.Web.HttpContext, System.AsyncCallback, System.Object)
+System.Web.HttpRuntime: Void ProcessRequestInternal(System.Web.HttpWorkerRequest)
+System.Web.HttpRuntime: Void ProcessRequestNoDemand(System.Web.HttpWorkerRequest)
+System.Web.HttpRuntime: Void ProcessRequest(System.Web.HttpWorkerRequest)
+Telerik.Utilities.Cassini.Host: Void ProcessRequest(Telerik.Utilities.Cassini.Connection)'.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/12/2015 6:06:16 PM
+
+Message: Operation: 'ModelReset'. Parameters: 'notify:True'. Reason: 'MetaDataChange|InvalidatedModules:Telerik.Sitefinity.Modules.Ecommerce.Catalog.Data.OpenAccessCatalogDataProvider'. User: 'Anonymous'. StackTrace: '
+Telerik.Sitefinity.Data.OA.OpenAccessConnection: Void ResetModel(Telerik.Sitefinity.Services.OperationReason, Boolean)
+Telerik.Sitefinity.Data.TransactionManager: Void CommitTransaction(System.String)
+Telerik.Sitefinity.Services.SystemManager: Telerik.Sitefinity.Services.IModule InitializeModule(Telerik.Sitefinity.Services.ModuleSettings, Telerik.Sitefinity.Services.InstallContext, System.Nullable`1[System.Boolean], Boolean)
+Telerik.Sitefinity.Services.SystemManager: Boolean Initialize()
+Telerik.Sitefinity.Web.UI.Backend.StartupWizard: Void wizard_FinishButtonClick(System.Object, Telerik.Sitefinity.Web.UI.Backend.InternalWizardNavigationEventArgs)
+Telerik.Sitefinity.Web.UI.Backend.InternalWizard: Void OnFinishButtonClick(Telerik.Sitefinity.Web.UI.Backend.InternalWizardNavigationEventArgs)
+Telerik.Sitefinity.Web.UI.Backend.InternalWizard: Boolean OnBubbleEvent(System.Object, System.EventArgs)
+System.Web.UI.Control: Void RaiseBubbleEvent(System.Object, System.EventArgs)
+System.Web.UI.Page: Void ProcessRequestMain(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest()
+System.Web.UI.Page: Void ProcessRequest(System.Web.HttpContext)
+System.Web.HttpApplication+CallHandlerExecutionStep: Void System.Web.HttpApplication.IExecutionStep.Execute()
+System.Web.HttpApplication: System.Exception ExecuteStep(IExecutionStep, Boolean ByRef)
+System.Web.HttpApplication+ApplicationStepManager: Void ResumeSteps(System.Exception)
+System.Web.HttpApplication: System.IAsyncResult System.Web.IHttpAsyncHandler.BeginProcessRequest(System.Web.HttpContext, System.AsyncCallback, System.Object)
+System.Web.HttpRuntime: Void ProcessRequestInternal(System.Web.HttpWorkerRequest)
+System.Web.HttpRuntime: Void ProcessRequestNoDemand(System.Web.HttpWorkerRequest)
+System.Web.HttpRuntime: Void ProcessRequest(System.Web.HttpWorkerRequest)
+Telerik.Utilities.Cassini.Host: Void ProcessRequest(Telerik.Utilities.Cassini.Connection)'.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/12/2015 6:06:29 PM
+
+Message: Operation: 'ModelReset'. Parameters: 'notify:True'. Reason: 'MetaDataChange|InvalidatedModules:Telerik.Sitefinity.Security.Data.OpenAccessProfileProvider'. User: 'Anonymous'. StackTrace: '
+Telerik.Sitefinity.Data.OA.OpenAccessConnection: Void ResetModel(Telerik.Sitefinity.Services.OperationReason, Boolean)
+Telerik.Sitefinity.Data.TransactionManager: Void CommitTransaction(System.String)
+Telerik.Sitefinity.Services.SystemManager: Telerik.Sitefinity.Services.IModule InitializeModule(Telerik.Sitefinity.Services.ModuleSettings, Telerik.Sitefinity.Services.InstallContext, System.Nullable`1[System.Boolean], Boolean)
+Telerik.Sitefinity.Services.SystemManager: Boolean Initialize()
+Telerik.Sitefinity.Web.UI.Backend.StartupWizard: Void wizard_FinishButtonClick(System.Object, Telerik.Sitefinity.Web.UI.Backend.InternalWizardNavigationEventArgs)
+Telerik.Sitefinity.Web.UI.Backend.InternalWizard: Void OnFinishButtonClick(Telerik.Sitefinity.Web.UI.Backend.InternalWizardNavigationEventArgs)
+Telerik.Sitefinity.Web.UI.Backend.InternalWizard: Boolean OnBubbleEvent(System.Object, System.EventArgs)
+System.Web.UI.Control: Void RaiseBubbleEvent(System.Object, System.EventArgs)
+System.Web.UI.Page: Void ProcessRequestMain(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest()
+System.Web.UI.Page: Void ProcessRequest(System.Web.HttpContext)
+System.Web.HttpApplication+CallHandlerExecutionStep: Void System.Web.HttpApplication.IExecutionStep.Execute()
+System.Web.HttpApplication: System.Exception ExecuteStep(IExecutionStep, Boolean ByRef)
+System.Web.HttpApplication+ApplicationStepManager: Void ResumeSteps(System.Exception)
+System.Web.HttpApplication: System.IAsyncResult System.Web.IHttpAsyncHandler.BeginProcessRequest(System.Web.HttpContext, System.AsyncCallback, System.Object)
+System.Web.HttpRuntime: Void ProcessRequestInternal(System.Web.HttpWorkerRequest)
+System.Web.HttpRuntime: Void ProcessRequestNoDemand(System.Web.HttpWorkerRequest)
+System.Web.HttpRuntime: Void ProcessRequest(System.Web.HttpWorkerRequest)
+Telerik.Utilities.Cassini.Host: Void ProcessRequest(Telerik.Utilities.Cassini.Connection)'.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/12/2015 6:07:54 PM
+
+Message: Operation: 'ApplicationRestart'. Parameters: 'flags:Default;sendRestartApplicationSystemMessage:True'. Reason: 'SystemSetup'. User: 'Anonymous'. StackTrace: '
+Telerik.Sitefinity.Services.SystemManager: Boolean RestartApplication(Telerik.Sitefinity.Services.OperationReason, Telerik.Sitefinity.Services.SystemRestartFlags, Boolean)
+Telerik.Sitefinity.Web.UI.Backend.StartupWizard: Void wizard_FinishButtonClick(System.Object, Telerik.Sitefinity.Web.UI.Backend.InternalWizardNavigationEventArgs)
+Telerik.Sitefinity.Web.UI.Backend.InternalWizard: Void OnFinishButtonClick(Telerik.Sitefinity.Web.UI.Backend.InternalWizardNavigationEventArgs)
+Telerik.Sitefinity.Web.UI.Backend.InternalWizard: Boolean OnBubbleEvent(System.Object, System.EventArgs)
+System.Web.UI.Control: Void RaiseBubbleEvent(System.Object, System.EventArgs)
+System.Web.UI.Page: Void ProcessRequestMain(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest()
+System.Web.UI.Page: Void ProcessRequest(System.Web.HttpContext)
+System.Web.HttpApplication+CallHandlerExecutionStep: Void System.Web.HttpApplication.IExecutionStep.Execute()
+System.Web.HttpApplication: System.Exception ExecuteStep(IExecutionStep, Boolean ByRef)
+System.Web.HttpApplication+ApplicationStepManager: Void ResumeSteps(System.Exception)
+System.Web.HttpApplication: System.IAsyncResult System.Web.IHttpAsyncHandler.BeginProcessRequest(System.Web.HttpContext, System.AsyncCallback, System.Object)
+System.Web.HttpRuntime: Void ProcessRequestInternal(System.Web.HttpWorkerRequest)
+System.Web.HttpRuntime: Void ProcessRequestNoDemand(System.Web.HttpWorkerRequest)
+System.Web.HttpRuntime: Void ProcessRequest(System.Web.HttpWorkerRequest)
+Telerik.Utilities.Cassini.Host: Void ProcessRequest(Telerik.Utilities.Cassini.Connection)'.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/12/2015 6:08:02 PM
+
+Message: Operation: 'ModelReset'. Parameters: 'notify:True'. Reason: 'MetaDataChange|InvalidatedModules:Telerik.Sitefinity.Publishing.Data.OpenAccessPublishingPointDynamicTypeProvider'. User: 'Anonymous'. StackTrace: '
+Telerik.Sitefinity.Data.OA.OpenAccessConnection: Void ResetModel(Telerik.Sitefinity.Services.OperationReason, Boolean)
+Telerik.Sitefinity.Data.Decorators.OpenAccessDecorator: Void EnsureModelReset()
+Telerik.Sitefinity.Data.Metadata.OpenAccessMetaDataProvider: Void CommitTransaction(Boolean)
+DynamicModule.ns.Wrapped_OpenAccessMetaDataProvider_1935fe0d812041118d76a0350e7a84f1: Telerik.Microsoft.Practices.Unity.InterceptionExtension.IMethodReturn <CommitTransaction_DelegateImplementation>__31(Telerik.Microsoft.Practices.Unity.InterceptionExtension.IMethodInvocation, Telerik.Microsoft.Practices.Unity.InterceptionExtension.GetNextInterceptionBehaviorDelegate)
+Telerik.Sitefinity.Data.DataEventsCallHandler: Telerik.Microsoft.Practices.Unity.InterceptionExtension.IMethodReturn Invoke(Telerik.Microsoft.Practices.Unity.InterceptionExtension.IMethodInvocation, Telerik.Microsoft.Practices.Unity.InterceptionExtension.GetNextHandlerDelegate)
+Telerik.Sitefinity.Security.SitefinityAuthorizationCallHandler: Telerik.Microsoft.Practices.Unity.InterceptionExtension.IMethodReturn Invoke(Telerik.Microsoft.Practices.Unity.InterceptionExtension.IMethodInvocation, Telerik.Microsoft.Practices.Unity.InterceptionExtension.GetNextHandlerDelegate)
+DynamicModule.ns.Wrapped_OpenAccessMetaDataProvider_1935fe0d812041118d76a0350e7a84f1: Void CommitTransaction(Boolean)
+DynamicModule.ns.Wrapped_OpenAccessMetaDataProvider_1935fe0d812041118d76a0350e7a84f1: Telerik.Microsoft.Practices.Unity.InterceptionExtension.IMethodReturn <CommitTransaction_DelegateImplementation>__30(Telerik.Microsoft.Practices.Unity.InterceptionExtension.IMethodInvocation, Telerik.Microsoft.Practices.Unity.InterceptionExtension.GetNextInterceptionBehaviorDelegate)
+Telerik.Sitefinity.Data.DataEventsCallHandler: Telerik.Microsoft.Practices.Unity.InterceptionExtension.IMethodReturn Invoke(Telerik.Microsoft.Practices.Unity.InterceptionExtension.IMethodInvocation, Telerik.Microsoft.Practices.Unity.InterceptionExtension.GetNextHandlerDelegate)
+Telerik.Sitefinity.Security.SitefinityAuthorizationCallHandler: Telerik.Microsoft.Practices.Unity.InterceptionExtension.IMethodReturn Invoke(Telerik.Microsoft.Practices.Unity.InterceptionExtension.IMethodInvocation, Telerik.Microsoft.Practices.Unity.InterceptionExtension.GetNextHandlerDelegate)
+DynamicModule.ns.Wrapped_OpenAccessMetaDataProvider_1935fe0d812041118d76a0350e7a84f1: Void CommitTransaction()
+Telerik.Sitefinity.Data.ManagerBase`1: Void SaveChanges(System.String)
+Telerik.Sitefinity.Publishing.PublishingPoints.PublishingPointFactory: Void CreatePublishingPointDataItem(System.Collections.Generic.IEnumerable`1[Telerik.Sitefinity.Publishing.Model.IDefinitionField], Telerik.Sitefinity.Publishing.Model.IPublishingPoint, Telerik.Sitefinity.Data.Metadata.MetadataManager)
+Telerik.Sitefinity.Forums.ForumsModule: Void CreateForumPublishingPoint()
+Telerik.Sitefinity.Publishing.PublishingModule: Void Bootstrapper_Initialized(System.Object, Telerik.Sitefinity.Data.ExecutedEventArgs)
+System.EventHandler`1: Void Invoke(System.Object, TEventArgs)
+Telerik.Sitefinity.Abstractions.Bootstrapper: Void OnInitialized(System.Object, Telerik.Sitefinity.Data.ExecutedEventArgs)
+Telerik.Sitefinity.Abstractions.Bootstrapper: Boolean Bootstrap()
+Telerik.Sitefinity.Services.SystemManager: Boolean RestartApplication(Telerik.Sitefinity.Services.OperationReason, Telerik.Sitefinity.Services.SystemRestartFlags, Boolean)
+Telerik.Sitefinity.Web.UI.Backend.StartupWizard: Void wizard_FinishButtonClick(System.Object, Telerik.Sitefinity.Web.UI.Backend.InternalWizardNavigationEventArgs)
+Telerik.Sitefinity.Web.UI.Backend.InternalWizard: Void OnFinishButtonClick(Telerik.Sitefinity.Web.UI.Backend.InternalWizardNavigationEventArgs)
+Telerik.Sitefinity.Web.UI.Backend.InternalWizard: Boolean OnBubbleEvent(System.Object, System.EventArgs)
+System.Web.UI.Control: Void RaiseBubbleEvent(System.Object, System.EventArgs)
+System.Web.UI.Page: Void ProcessRequestMain(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest(Boolean, Boolean)
+System.Web.UI.Page: Void ProcessRequest()
+System.Web.UI.Page: Void ProcessRequest(System.Web.HttpContext)
+System.Web.HttpApplication+CallHandlerExecutionStep: Void System.Web.HttpApplication.IExecutionStep.Execute()
+System.Web.HttpApplication: System.Exception ExecuteStep(IExecutionStep, Boolean ByRef)
+System.Web.HttpApplication+ApplicationStepManager: Void ResumeSteps(System.Exception)
+System.Web.HttpApplication: System.IAsyncResult System.Web.IHttpAsyncHandler.BeginProcessRequest(System.Web.HttpContext, System.AsyncCallback, System.Object)
+System.Web.HttpRuntime: Void ProcessRequestInternal(System.Web.HttpWorkerRequest)
+System.Web.HttpRuntime: Void ProcessRequestNoDemand(System.Web.HttpWorkerRequest)
+System.Web.HttpRuntime: Void ProcessRequest(System.Web.HttpWorkerRequest)
+Telerik.Utilities.Cassini.Host: Void ProcessRequest(Telerik.Utilities.Cassini.Connection)'.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/12/2015 8:49:48 PM
+
+Message: Shutting down threadpool...
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/12/2015 8:49:48 PM
+
+Message: Thread pool 'BackgroundTasksService': Shutdown of thread pool completed. All currently running threads will finish their work and stop.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/12/2015 8:49:48 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/12/2015 8:49:48 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/12/2015 8:49:48 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/12/2015 8:49:48 PM
+
+Message: Background task scheduler shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/12/2015 8:49:48 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/12/2015 8:50:18 PM
+
+Message: Shutting down threadpool...
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/12/2015 8:50:18 PM
+
+Message: Thread pool 'BackgroundTasksService': Shutdown of thread pool completed. Threads aborted.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/12/2015 9:12:19 PM
+
+Message: Shutting down threadpool...
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/12/2015 9:12:19 PM
+
+Message: Thread pool 'BackgroundTasksService': Shutdown of thread pool completed. All currently running threads will finish their work and stop.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/12/2015 9:12:19 PM
+
+Message: Background task scheduler shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/12/2015 9:12:19 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/12/2015 9:12:19 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/12/2015 9:12:19 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/12/2015 9:12:19 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/12/2015 9:12:49 PM
+
+Message: Shutting down threadpool...
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/12/2015 9:12:49 PM
+
+Message: Thread pool 'BackgroundTasksService': Shutdown of thread pool completed. Threads aborted.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/13/2015 12:21:32 PM
+
+Message: Shutting down threadpool...
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/13/2015 12:21:32 PM
+
+Message: Thread pool 'BackgroundTasksService': Shutdown of thread pool completed. All currently running threads will finish their work and stop.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/13/2015 12:21:32 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/13/2015 12:21:32 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/13/2015 12:21:32 PM
+
+Message: Background task scheduler shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/13/2015 12:21:32 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/13/2015 12:21:32 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/13/2015 12:22:02 PM
+
+Message: Shutting down threadpool...
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/13/2015 12:22:02 PM
+
+Message: Thread pool 'BackgroundTasksService': Shutdown of thread pool completed. Threads aborted.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/13/2015 3:18:43 PM
+
+Message: Shutting down threadpool...
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/13/2015 3:18:43 PM
+
+Message: Thread pool 'BackgroundTasksService': Shutdown of thread pool completed. All currently running threads will finish their work and stop.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/13/2015 3:18:44 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/13/2015 3:18:44 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/13/2015 3:18:44 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/13/2015 3:18:44 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/13/2015 3:18:44 PM
+
+Message: Background task scheduler shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/13/2015 3:19:14 PM
+
+Message: Shutting down threadpool...
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 10/13/2015 3:19:14 PM
+
+Message: Thread pool 'BackgroundTasksService': Shutdown of thread pool completed. Threads aborted.
+
+
+----------------------------------------

@@ -1,0 +1,81 @@
+﻿@model IEnumerable<SitefinityWebApp.PageFieldInfo>
+
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>*@
+<table class="table" style="max-width:900px">
+    <thead>
+        <tr>
+            <th style="font-weight:bold">
+                @Html.DisplayNameFor(model => model.FieldName)
+            </th>
+            <th id="site1Header" style="font-weight:bold">
+                @Html.DisplayNameFor(model => model.Site1)
+            </th>
+            <th id="site2Header" style="font-weight:bold">
+                @Html.DisplayNameFor(model => model.Site2)
+            </th>
+            @if (Model.Any(p => p.Site3 != null))
+            {
+                <th id="site3Header" style="font-weight:bold">
+                    @Html.DisplayNameFor(model => model.Site3)
+                </th>
+            }
+
+        </tr>
+    </thead>
+
+    @{
+
+        foreach (var item in Model)
+        {
+            var bgColor = "transparent";
+            var color = "black";
+            if (item.Site1 != item.Site2)
+            {
+                bgColor = "red";
+                color = "white";
+            }
+            if (item.Site3 != null && (item.Site1 != item.Site3 || item.Site2 != item.Site3))
+            {
+                bgColor = "red";
+                color = "white";
+            }
+            <tr style='background-color:@bgColor;color:@color'>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FieldName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Site1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Site2)
+                </td>
+                @if (item.Site3 != null)
+                {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Site3)
+                    </td>
+                }
+            </tr>
+        }
+    }
+
+</table>
+
+<script type="text/javascript">
+
+    var site1Name = $('#site1Id option:selected').text();
+    var site1Val = $('#site1Id').val();
+    $('#site1Header').html("<a target='_blank' href = '/Sitefinity/Pages?sf_site=" + site1Val + "'>" + site1Name + "</a>");
+    var site2Name = $('#site2 option:selected').text();
+    var site2Val = $('#site2 option:selected').val();
+    $('#site2Header').html("<a target='_blank' href = '/Sitefinity/Pages?sf_site=" + site2Val + "'>" + site2Name + "</a>");
+    @if (Model.Any(p => p.Site3 != null))
+    {
+        @:var site3Name = $('#site3 option:selected').text();
+        @:var site3Val = $('#site3 option:selected').val();
+        @:$('#site3Header').html("<a target='_blank' href = '/Sitefinity/Pages?sf_site=" + site3Val + "'>" + site3Name + "</a>");
+    }
+
+</script>

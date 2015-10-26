@@ -1,0 +1,7 @@
+----------------------------------------
+Timestamp: 10/14/2015 12:19:01 PM
+
+Message: Initial install FAILED: Telerik.OpenAccess.OpenAccessException: SQL exception on 'CREATE TABLE [sf_meta_attribute] ( [id] uniqueidentifier NOT NULL,  [nme] varchar(255) NULL,  [val] NVARCHAR(MAX) NULL,  [voa_class] int NOT NULL,  [voa_version] smallint NOT NULL,  [id2] uniqueidentifier NULL,  [id3] uniqueidentifier NULL,  CONSTRAINT [pk_sf_meta_attribute] PRIMARY KEY ([id]) )' : There is already an object named 'sf_meta_attribute' in the database.. See the error log for more details.
+
+
+----------------------------------------

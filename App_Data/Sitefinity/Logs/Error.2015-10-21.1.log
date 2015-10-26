@@ -1,0 +1,1510 @@
+----------------------------------------
+Timestamp: 10/20/2015 12:02:45 PM
+
+Message: HandlingInstanceID: c7e97f7e-0378-4d1c-9ea7-7ba1f7304047
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+10/20/2015 08:02:45
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Type 'ASP._Page_Mvc_Views_PageCompareWidget_Default_cshtml' does not inherit from 'System.Web.WebPages.WebPage'.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckAssignableType(System.Type, System.Type)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckAssignableType(Type baseType, Type type)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(String virtualPath, Type requiredBaseType)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.WebPageHttpHandler.CreateFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at System.Web.WebPages.WebPageHttpHandler.CreateFromVirtualPath(String virtualPath)
+   at System.Web.WebPages.WebPageRoute.DoPostResolveRequestCache(HttpContextBase context)
+   at System.Web.WebPages.WebPageHttpModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/20/2015 12:02:45 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-130898161052521063
+ThreadIdentity : 
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/Mvc/Views/PageCompareWidget/Default.cshtml
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-1-130898161052521063
+
+ProcessId: 7888
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:696
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/20/2015 12:02:52 PM
+
+Message: HandlingInstanceID: ffc9a58c-1898-4dcc-939e-55b629d58b84
+An exception of type 'Telerik.Sitefinity.Security.SecurityDemandFailException' occurred and was caught.
+-------------------------------------------------------------------------------------------------------
+10/20/2015 08:02:52
+Type : Telerik.Sitefinity.Security.SecurityDemandFailException, Telerik.Sitefinity, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+Message : Telerik.Sitefinity.Multisite.Model.Site, Telerik.Sitefinity.Model was not granted AccessSite in Site for principals with IDs 00000000-0000-0000-0000-000000000000
+Source : Telerik.Sitefinity
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ThrowSecurityException(Telerik.Sitefinity.Security.Model.ISecuredObject, System.String, System.Guid[], Int32)
+HResult : -2146232832
+Stack Trace :    at Telerik.Sitefinity.Security.SecurityExtensions.ThrowSecurityException(ISecuredObject item, String permissionSet, Guid[] principals, Int32 actions)
+   at Telerik.Sitefinity.Security.SecurityExtensions.Demand(ISecuredObject item, String permissionSet, Guid[] principals, Int32 actions, IOwnership actualOwnerObject)
+   at Telerik.Sitefinity.Security.SecurityExtensions.Demand(ISecuredObject item, String permissionSet, Guid[] principals, Int32 actions)
+   at Telerik.Sitefinity.Security.SecurityExtensions.Demand(ISecuredObject item, String permissionSet, Int32 actions)
+   at Telerik.Sitefinity.Security.PermissionApplierEnumerator`1.Demand(T forItem)
+   at Telerik.Sitefinity.Security.PermissionApplierEnumeratorBase`1.MoveNext()
+   at Telerik.Sitefinity.Data.Linq.DataItemEnumerator`1.MoveNext()
+   at SitefinityWebApp.Mvc.Controllers.PageCompareWidgetController.Index() in c:\Development\TestFinity\Mvc\Controllers\PageCompareWidgetController.cs:line 35
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
+   at Telerik.Sitefinity.Mvc.ControllerActionInvoker.ExecuteController(MvcProxyBase proxyControl)
+   at Telerik.Sitefinity.Mvc.ControllerActionInvoker.TryInvokeAction(MvcProxyBase proxyControl, String& output)
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.ExecuteController()
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.OnPreRender(EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/20/2015 12:02:52 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-130898161052521063
+ThreadIdentity : 
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/pagecompare
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-1-130898161052521063
+
+ProcessId: 7888
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:8272
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/20/2015 12:12:40 PM
+
+Message: HandlingInstanceID: 90f5cb7e-94ec-4141-b75d-c8fa8584c7cf
+An exception of type 'System.Security.Cryptography.CryptographicException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+10/20/2015 08:12:40
+Type : System.Security.Cryptography.CryptographicException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Bad Data.
+
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ThrowCryptographicException(Int32)
+HResult : -2146893819
+Stack Trace :    at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at System.IO.Stream.Dispose()
+   at Telerik.Sitefinity.Security.SecurityManager.DecryptData(Byte[] data)
+   at Telerik.Sitefinity.Security.Claims.SitefinityCookieTransform.Decode(Byte[] encoded)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms(Byte[] cookie, Boolean outbound)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(Byte[] token, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionAuthenticationModule.ReadToken(Byte[] sessionCookie)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/20/2015 12:12:40 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-2-130898167221676361
+ThreadIdentity : 
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/pagecompare
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-2-130898167221676361
+
+ProcessId: 8260
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:4380
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/20/2015 12:12:52 PM
+
+Message: HandlingInstanceID: 3ad740cb-135a-4218-8d1a-157571aabef2
+An exception of type 'Telerik.Sitefinity.Security.SecurityDemandFailException' occurred and was caught.
+-------------------------------------------------------------------------------------------------------
+10/20/2015 08:12:51
+Type : Telerik.Sitefinity.Security.SecurityDemandFailException, Telerik.Sitefinity, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+Message : Telerik.Sitefinity.Multisite.Model.Site, Telerik.Sitefinity.Model was not granted AccessSite in Site for principals with IDs 00000000-0000-0000-0000-000000000000
+Source : Telerik.Sitefinity
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ThrowSecurityException(Telerik.Sitefinity.Security.Model.ISecuredObject, System.String, System.Guid[], Int32)
+HResult : -2146232832
+Stack Trace :    at Telerik.Sitefinity.Security.SecurityExtensions.ThrowSecurityException(ISecuredObject item, String permissionSet, Guid[] principals, Int32 actions)
+   at Telerik.Sitefinity.Security.SecurityExtensions.Demand(ISecuredObject item, String permissionSet, Guid[] principals, Int32 actions, IOwnership actualOwnerObject)
+   at Telerik.Sitefinity.Security.SecurityExtensions.Demand(ISecuredObject item, String permissionSet, Guid[] principals, Int32 actions)
+   at Telerik.Sitefinity.Security.SecurityExtensions.Demand(ISecuredObject item, String permissionSet, Int32 actions)
+   at Telerik.Sitefinity.Security.PermissionApplierEnumerator`1.Demand(T forItem)
+   at Telerik.Sitefinity.Security.PermissionApplierEnumeratorBase`1.MoveNext()
+   at Telerik.Sitefinity.Data.Linq.DataItemEnumerator`1.MoveNext()
+   at SitefinityWebApp.Mvc.Controllers.PageCompareWidgetController.Index() in c:\Development\TestFinity\Mvc\Controllers\PageCompareWidgetController.cs:line 35
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
+   at Telerik.Sitefinity.Mvc.ControllerActionInvoker.ExecuteController(MvcProxyBase proxyControl)
+   at Telerik.Sitefinity.Mvc.ControllerActionInvoker.TryInvokeAction(MvcProxyBase proxyControl, String& output)
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.ExecuteController()
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.OnPreRender(EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/20/2015 12:12:52 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-2-130898167221676361
+ThreadIdentity : 
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/pagecompare
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-2-130898167221676361
+
+ProcessId: 8260
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:4380
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/20/2015 1:21:54 PM
+
+Message: HandlingInstanceID: aaa9c8ee-7565-420b-ad3a-4ddeaaef1ea1
+An exception of type 'System.Security.Cryptography.CryptographicException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+10/20/2015 09:21:54
+Type : System.Security.Cryptography.CryptographicException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Bad Data.
+
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ThrowCryptographicException(Int32)
+HResult : -2146893819
+Stack Trace :    at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at System.IO.Stream.Dispose()
+   at Telerik.Sitefinity.Security.SecurityManager.DecryptData(Byte[] data)
+   at Telerik.Sitefinity.Security.Claims.SitefinityCookieTransform.Decode(Byte[] encoded)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms(Byte[] cookie, Boolean outbound)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(Byte[] token, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionAuthenticationModule.ReadToken(Byte[] sessionCookie)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/20/2015 1:21:54 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-130898208451027349
+ThreadIdentity : 
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/Sitefinity/Pages
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-1-130898208451027349
+
+ProcessId: 10224
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:7556
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/20/2015 1:28:32 PM
+
+Message: HandlingInstanceID: fe12b7f9-89c9-4536-9683-c3efe4a6754b
+An exception of type 'System.InvalidOperationException' occurred and was caught.
+--------------------------------------------------------------------------------
+10/20/2015 09:28:32
+Type : System.InvalidOperationException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Sequence contains no matching element
+Source : System.Core
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : TSource First[TSource](System.Collections.Generic.IEnumerable`1[TSource], System.Func`2[TSource,System.Boolean])
+HResult : -2146233079
+Stack Trace :    at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at SitefinityWebApp.Mvc.Controllers.PageCompareWidgetController.GetFields(PageCompareInfo info)
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
+   at Telerik.Sitefinity.Mvc.ControllerActionInvoker.ExecuteController(MvcProxyBase proxyControl)
+   at Telerik.Sitefinity.Mvc.ControllerActionInvoker.TryInvokeAction(MvcProxyBase proxyControl, String& output)
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.ExecuteController()
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.OnPreRender(EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/20/2015 1:28:32 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-130898208451027349
+ThreadIdentity : admin
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/pagecompare/GetFields?Page=test&Site1=TestFinity&Site2=TestFinity_MX&Site3=TestFinity_Nissan
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-1-130898208451027349
+
+ProcessId: 10224
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:2996
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/20/2015 1:29:29 PM
+
+Message: HandlingInstanceID: bfbcd306-ef16-487f-811a-a7de1ee7c656
+An exception of type 'System.InvalidOperationException' occurred and was caught.
+--------------------------------------------------------------------------------
+10/20/2015 09:29:29
+Type : System.InvalidOperationException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Sequence contains no matching element
+Source : System.Core
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : TSource First[TSource](System.Collections.Generic.IEnumerable`1[TSource], System.Func`2[TSource,System.Boolean])
+HResult : -2146233079
+Stack Trace :    at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at SitefinityWebApp.Mvc.Controllers.PageCompareWidgetController.GetFields(PageCompareInfo info)
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
+   at Telerik.Sitefinity.Mvc.ControllerActionInvoker.ExecuteController(MvcProxyBase proxyControl)
+   at Telerik.Sitefinity.Mvc.ControllerActionInvoker.TryInvokeAction(MvcProxyBase proxyControl, String& output)
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.ExecuteController()
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.OnPreRender(EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/20/2015 1:29:29 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-130898208451027349
+ThreadIdentity : admin
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/pagecompare/GetFields?Page=test&Site1=TestFinity&Site2=TestFinity_MX&Site3=TestFinity_Nissan
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-1-130898208451027349
+
+ProcessId: 10224
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:8196
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/20/2015 1:30:37 PM
+
+Message: HandlingInstanceID: e0082454-1efd-41b6-9644-3f815b5d4ca8
+An exception of type 'Telerik.Sitefinity.Utilities.MS.ServiceModel.Web.WebProtocolException' occurred and was caught.
+---------------------------------------------------------------------------------------------------------------------
+10/20/2015 09:30:37
+Type : Telerik.Sitefinity.Utilities.MS.ServiceModel.Web.WebProtocolException, Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+Message : Template with the same name already exists. Please use a different name.
+Source : Telerik.Sitefinity
+Help link : 
+StatusCode : InternalServerError
+StatusDescription : Template with the same name already exists. Please use a different name.
+IsDetailXhtml : True
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Telerik.Sitefinity.Modules.Pages.Web.Services.Model.WcfPageTemplateContext SavePageTemplateInternal(Telerik.Sitefinity.Modules.Pages.Web.Services.Model.WcfPageTemplateContext, Boolean)
+HResult : -2146233087
+detailWriterInstance : Telerik.Sitefinity.Utilities.MS.ServiceModel.Web.WebProtocolException+StringDetailWriter
+Stack Trace :    at Telerik.Sitefinity.Modules.Pages.Web.Services.PageTemplatesService.SavePageTemplateInternal(WcfPageTemplateContext ctx, Boolean duplicate)
+   at Telerik.Sitefinity.Modules.Pages.Web.Services.PageTemplatesService.SavePageTemplate(WcfPageTemplateContext templateContext, String templateId, String itemType, String providerName, String managerType, Boolean duplicate)
+   at SyncInvokeSavePageTemplate(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/20/2015 1:30:37 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-130898208451027349
+ThreadIdentity : 
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/Sitefinity/Services/Pages/PageTemplatesService.svc/00000000-0000-0000-0000-000000000000/?itemType=Telerik.Sitefinity.Pages.Model.PageTemplate&providerName=OpenAccessDataProvider&managerType=Telerik.Sitefinity.Modules.Pages.PageManager&provider=OpenAccessDataProvider&workflowOperation=
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-1-130898208451027349
+
+ProcessId: 10224
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:5616
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/20/2015 2:03:40 PM
+
+Message: HandlingInstanceID: c6258a75-15a9-4c19-9fb8-992cd7829f54
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+10/20/2015 10:03:40
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Type 'ASP._Page_Mvc_Views_PageCompareWidget_Default_cshtml' does not inherit from 'System.Web.WebPages.WebPage'.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckAssignableType(System.Type, System.Type)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckAssignableType(Type baseType, Type type)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(String virtualPath, Type requiredBaseType)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.WebPageHttpHandler.CreateFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at System.Web.WebPages.WebPageHttpHandler.CreateFromVirtualPath(String virtualPath)
+   at System.Web.WebPages.WebPageRoute.DoPostResolveRequestCache(HttpContextBase context)
+   at System.Web.WebPages.WebPageHttpModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/20/2015 2:03:40 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-130898233678599901
+ThreadIdentity : admin
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/Mvc/Views/PageCompareWidget/Default.cshtml
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-1-130898233678599901
+
+ProcessId: 2108
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:8492
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/20/2015 2:35:13 PM
+
+Message: HandlingInstanceID: b3cb6ede-11c8-4c6a-9868-476eb57c9db2
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+10/20/2015 10:35:13
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Type 'ASP._Page_Mvc_Views_PageCompareWidget_Default_cshtml' does not inherit from 'System.Web.WebPages.WebPage'.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckAssignableType(System.Type, System.Type)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckAssignableType(Type baseType, Type type)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(String virtualPath, Type requiredBaseType)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.WebPageHttpHandler.CreateFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at System.Web.WebPages.WebPageHttpHandler.CreateFromVirtualPath(String virtualPath)
+   at System.Web.WebPages.WebPageRoute.DoPostResolveRequestCache(HttpContextBase context)
+   at System.Web.WebPages.WebPageHttpModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/20/2015 2:35:13 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-130898252552177688
+ThreadIdentity : admin
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/Mvc/Views/PageCompareWidget/Default.cshtml
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-1-130898252552177688
+
+ProcessId: 8720
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:9548
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/20/2015 2:48:36 PM
+
+Message: HandlingInstanceID: 2c41bdea-ffc2-480f-a0db-431735765231
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+10/20/2015 10:48:36
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Type 'ASP._Page_Mvc_Views_PageCompareWidget_Default_cshtml' does not inherit from 'System.Web.WebPages.WebPage'.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckAssignableType(System.Type, System.Type)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckAssignableType(Type baseType, Type type)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(String virtualPath, Type requiredBaseType)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.WebPageHttpHandler.CreateFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at System.Web.WebPages.WebPageHttpHandler.CreateFromVirtualPath(String virtualPath)
+   at System.Web.WebPages.WebPageRoute.DoPostResolveRequestCache(HttpContextBase context)
+   at System.Web.WebPages.WebPageHttpModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/20/2015 2:48:36 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-130898260626167395
+ThreadIdentity : admin
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/Mvc/Views/PageCompareWidget/Default.cshtml
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-1-130898260626167395
+
+ProcessId: 5996
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:5732
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/20/2015 2:49:15 PM
+
+Message: HandlingInstanceID: 1c4dc28a-53d9-418d-8c9d-4fa343cb158c
+An exception of type 'System.Security.Cryptography.CryptographicException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+10/20/2015 10:49:15
+Type : System.Security.Cryptography.CryptographicException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Bad Data.
+
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ThrowCryptographicException(Int32)
+HResult : -2146893819
+Stack Trace :    at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at System.IO.Stream.Dispose()
+   at Telerik.Sitefinity.Security.SecurityManager.DecryptData(Byte[] data)
+   at Telerik.Sitefinity.Security.Claims.SitefinityCookieTransform.Decode(Byte[] encoded)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms(Byte[] cookie, Boolean outbound)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(Byte[] token, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionAuthenticationModule.ReadToken(Byte[] sessionCookie)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/20/2015 2:49:15 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-2-130898261271951967
+ThreadIdentity : 
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/pagecompare
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-2-130898261271951967
+
+ProcessId: 5996
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:5732
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/20/2015 2:49:34 PM
+
+Message: HandlingInstanceID: d1f98912-f406-4ab9-9524-9adde752811e
+An exception of type 'Telerik.Sitefinity.Security.SecurityDemandFailException' occurred and was caught.
+-------------------------------------------------------------------------------------------------------
+10/20/2015 10:49:34
+Type : Telerik.Sitefinity.Security.SecurityDemandFailException, Telerik.Sitefinity, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+Message : Telerik.Sitefinity.Multisite.Model.Site, Telerik.Sitefinity.Model was not granted AccessSite in Site for principals with IDs 00000000-0000-0000-0000-000000000000
+Source : Telerik.Sitefinity
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ThrowSecurityException(Telerik.Sitefinity.Security.Model.ISecuredObject, System.String, System.Guid[], Int32)
+HResult : -2146232832
+Stack Trace :    at Telerik.Sitefinity.Security.SecurityExtensions.ThrowSecurityException(ISecuredObject item, String permissionSet, Guid[] principals, Int32 actions)
+   at Telerik.Sitefinity.Security.SecurityExtensions.Demand(ISecuredObject item, String permissionSet, Guid[] principals, Int32 actions, IOwnership actualOwnerObject)
+   at Telerik.Sitefinity.Security.SecurityExtensions.Demand(ISecuredObject item, String permissionSet, Guid[] principals, Int32 actions)
+   at Telerik.Sitefinity.Security.SecurityExtensions.Demand(ISecuredObject item, String permissionSet, Int32 actions)
+   at Telerik.Sitefinity.Security.PermissionApplierEnumerator`1.Demand(T forItem)
+   at Telerik.Sitefinity.Security.PermissionApplierEnumeratorBase`1.MoveNext()
+   at Telerik.Sitefinity.Data.Linq.DataItemEnumerator`1.MoveNext()
+   at SitefinityWebApp.Mvc.Controllers.PageCompareWidgetController.Index() in c:\Development\TestFinity\Mvc\Controllers\PageCompareWidgetController.cs:line 35
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
+   at Telerik.Sitefinity.Mvc.ControllerActionInvoker.ExecuteController(MvcProxyBase proxyControl)
+   at Telerik.Sitefinity.Mvc.ControllerActionInvoker.TryInvokeAction(MvcProxyBase proxyControl, String& output)
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.ExecuteController()
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.OnPreRender(EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/20/2015 2:49:34 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-2-130898261271951967
+ThreadIdentity : 
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/pagecompare
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-2-130898261271951967
+
+ProcessId: 5996
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:5732
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/20/2015 3:22:28 PM
+
+Message: HandlingInstanceID: bab5d7a1-7264-4709-85a9-8625b693c49d
+An exception of type 'System.Security.Cryptography.CryptographicException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+10/20/2015 11:22:28
+Type : System.Security.Cryptography.CryptographicException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Bad Data.
+
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ThrowCryptographicException(Int32)
+HResult : -2146893819
+Stack Trace :    at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at System.IO.Stream.Dispose()
+   at Telerik.Sitefinity.Security.SecurityManager.DecryptData(Byte[] data)
+   at Telerik.Sitefinity.Security.Claims.SitefinityCookieTransform.Decode(Byte[] encoded)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms(Byte[] cookie, Boolean outbound)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(Byte[] token, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionAuthenticationModule.ReadToken(Byte[] sessionCookie)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/20/2015 3:22:28 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-130898280964481023
+ThreadIdentity : 
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/WebResource.axd?d=qGRJrCGDoA8ihpFdBbq5z6NK11chyxaoz3m9Ltm89jSusN74bFM8L6wTzC1lqadTKDfXIWyu3b_m10iUxqougzWFKWPNEs053-H08D4L52A1&t=635703524960000000&_=1445353851305
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-1-130898280964481023
+
+ProcessId: 9436
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:8184
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/20/2015 4:58:43 PM
+
+Message: HandlingInstanceID: 9c46dae9-6779-4cec-bd1e-92a5a6c8601a
+An exception of type 'System.NullReferenceException' occurred and was caught.
+-----------------------------------------------------------------------------
+10/20/2015 12:58:43
+Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Object reference not set to an instance of an object.
+Source : Telerik.Sitefinity
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Telerik.Sitefinity.Model.IDataItem GetItemFromUrl(Telerik.Sitefinity.Data.IManager, System.String, System.String ByRef)
+HResult : -2147467261
+Stack Trace :    at Telerik.Sitefinity.Web.UI.ContentUI.ContentView.GetItemFromUrl(IManager manager, String itemUrl, String& redirectUrl)
+   at Telerik.Sitefinity.Web.UI.ContentUI.ContentView.ResolveDetailItemFromUrl()
+   at Telerik.Sitefinity.Web.UI.ContentUI.ContentView.ResolveDetailItem()
+   at Telerik.Sitefinity.Web.UI.ContentUI.ContentView.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at Telerik.Sitefinity.Modules.Pages.DraftProxyBase.editor_ControlAdd(Object sender, ZoneEditorEventArgs e)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/20/2015 4:58:43 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-2-130898320552869513
+ThreadIdentity : admin
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/Sitefinity/Pages/Action/Edit
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-2-130898320552869513
+
+ProcessId: 8240
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:9048
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/20/2015 5:00:47 PM
+
+Message: HandlingInstanceID: 71cc40a3-ad3f-47fd-9eaf-7e5ae4a9b548
+An exception of type 'System.NullReferenceException' occurred and was caught.
+-----------------------------------------------------------------------------
+10/20/2015 13:00:47
+Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Object reference not set to an instance of an object.
+Source : Telerik.Sitefinity
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Telerik.Sitefinity.Model.IDataItem GetItemFromUrl(Telerik.Sitefinity.Data.IManager, System.String, System.String ByRef)
+HResult : -2147467261
+Stack Trace :    at Telerik.Sitefinity.Web.UI.ContentUI.ContentView.GetItemFromUrl(IManager manager, String itemUrl, String& redirectUrl)
+   at Telerik.Sitefinity.Web.UI.ContentUI.ContentView.ResolveDetailItemFromUrl()
+   at Telerik.Sitefinity.Web.UI.ContentUI.ContentView.ResolveDetailItem()
+   at Telerik.Sitefinity.Web.UI.ContentUI.ContentView.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at Telerik.Sitefinity.Modules.Pages.DraftProxyBase.editor_ControlAdd(Object sender, ZoneEditorEventArgs e)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/20/2015 5:00:47 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-2-130898320552869513
+ThreadIdentity : admin
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/Sitefinity/Pages/Action/Edit
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-2-130898320552869513
+
+ProcessId: 8240
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:5276
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/20/2015 7:19:40 PM
+
+Message: HandlingInstanceID: cd4c9f52-614c-48e9-8881-55d929164e76
+An exception of type 'System.Security.Cryptography.CryptographicException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+10/20/2015 15:19:40
+Type : System.Security.Cryptography.CryptographicException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Bad Data.
+
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ThrowCryptographicException(Int32)
+HResult : -2146893819
+Stack Trace :    at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at System.IO.Stream.Dispose()
+   at Telerik.Sitefinity.Security.SecurityManager.DecryptData(Byte[] data)
+   at Telerik.Sitefinity.Security.Claims.SitefinityCookieTransform.Decode(Byte[] encoded)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms(Byte[] cookie, Boolean outbound)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(Byte[] token, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionAuthenticationModule.ReadToken(Byte[] sessionCookie)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/20/2015 7:19:40 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-130898423284501837
+ThreadIdentity : 
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/Sitefinity/Pages
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-1-130898423284501837
+
+ProcessId: 5296
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:5152
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/20/2015 7:19:46 PM
+
+Message: HandlingInstanceID: 2b18414c-cbed-4bfc-b5e0-1ecaa1233071
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+10/20/2015 15:19:46
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Type 'ASP._Page_Mvc_Views_PageCompareWidget_Default_cshtml' does not inherit from 'System.Web.WebPages.WebPage'.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckAssignableType(System.Type, System.Type)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckAssignableType(Type baseType, Type type)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(String virtualPath, Type requiredBaseType)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.WebPageHttpHandler.CreateFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at System.Web.WebPages.WebPageHttpHandler.CreateFromVirtualPath(String virtualPath)
+   at System.Web.WebPages.WebPageRoute.DoPostResolveRequestCache(HttpContextBase context)
+   at System.Web.WebPages.WebPageHttpModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/20/2015 7:19:46 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-130898423284501837
+ThreadIdentity : admin
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/Mvc/Views/PageCompareWidget/Default.cshtml
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-1-130898423284501837
+
+ProcessId: 5296
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:6620
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/20/2015 7:27:57 PM
+
+Message: HandlingInstanceID: 7f4ffed3-2d50-4f76-9d7e-d4ef0f7b70ce
+An exception of type 'System.Reflection.AmbiguousMatchException' occurred and was caught.
+-----------------------------------------------------------------------------------------
+10/20/2015 15:27:57
+Type : System.Reflection.AmbiguousMatchException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : The current request for action 'GetSites' on controller type 'PageCompareWidgetController' is ambiguous between the following action methods:
+System.Web.Mvc.JsonResult GetSites() on type SitefinityWebApp.Mvc.Controllers.PageCompareWidgetController
+System.Web.Mvc.JsonResult GetSites(System.String) on type SitefinityWebApp.Mvc.Controllers.PageCompareWidgetController
+Source : System.Web.Mvc
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Reflection.MethodInfo FindActionMethod(System.Web.Mvc.ControllerContext, System.String)
+HResult : -2147475171
+Stack Trace :    at System.Web.Mvc.ActionMethodSelectorBase.FindActionMethod(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Async.AsyncActionMethodSelector.FindAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Async.ReflectedAsyncControllerDescriptor.FindAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.ControllerActionInvoker.FindAction(ControllerContext controllerContext, ControllerDescriptor controllerDescriptor, String actionName)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
+   at Telerik.Sitefinity.Mvc.ControllerActionInvoker.ExecuteController(MvcProxyBase proxyControl)
+   at Telerik.Sitefinity.Mvc.ControllerActionInvoker.TryInvokeAction(MvcProxyBase proxyControl, String& output)
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.ExecuteController()
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.OnPreRender(EventArgs e)
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/20/2015 7:27:57 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-130898423284501837
+ThreadIdentity : admin
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/pagecompare/GetSites
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-1-130898423284501837
+
+ProcessId: 5296
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:5136
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/20/2015 7:57:48 PM
+
+Message: HandlingInstanceID: 0a12f61f-1c3f-4709-bb68-17b30c82c210
+An exception of type 'System.Security.Cryptography.CryptographicException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+10/20/2015 15:57:48
+Type : System.Security.Cryptography.CryptographicException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Bad Data.
+
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ThrowCryptographicException(Int32)
+HResult : -2146893819
+Stack Trace :    at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at System.IO.Stream.Dispose()
+   at Telerik.Sitefinity.Security.SecurityManager.DecryptData(Byte[] data)
+   at Telerik.Sitefinity.Security.Claims.SitefinityCookieTransform.Decode(Byte[] encoded)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms(Byte[] cookie, Boolean outbound)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(Byte[] token, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionAuthenticationModule.ReadToken(Byte[] sessionCookie)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/20/2015 7:57:48 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-130898446250032256
+ThreadIdentity : 
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/Sitefinity/Pages?sf_site=c58095db-8708-6177-8507-ff000056674f
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-1-130898446250032256
+
+ProcessId: 5784
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:8728
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/20/2015 8:39:10 PM
+
+Message: HandlingInstanceID: 176ecefb-646e-450d-aba1-5bb864e94c68
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+10/20/2015 16:39:10
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Type 'ASP._Page_Mvc_Views_PageCompareWidget_Default_cshtml' does not inherit from 'System.Web.WebPages.WebPage'.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckAssignableType(System.Type, System.Type)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckAssignableType(Type baseType, Type type)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(String virtualPath, Type requiredBaseType)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.WebPageHttpHandler.CreateFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at System.Web.WebPages.WebPageHttpHandler.CreateFromVirtualPath(String virtualPath)
+   at System.Web.WebPages.WebPageRoute.DoPostResolveRequestCache(HttpContextBase context)
+   at System.Web.WebPages.WebPageHttpModule.OnApplicationPostResolveRequestCache(Object sender, EventArgs e)
+   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/20/2015 8:39:10 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-1-130898470967121834
+ThreadIdentity : admin
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/Mvc/Views/PageCompareWidget/Default.cshtml
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-1-130898470967121834
+
+ProcessId: 3624
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:8920
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/20/2015 8:45:55 PM
+
+Message: HandlingInstanceID: 5af09d7e-40a4-4fef-98f6-b19776631efc
+An exception of type 'System.NullReferenceException' occurred and was caught.
+-----------------------------------------------------------------------------
+10/20/2015 16:45:55
+Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Object reference not set to an instance of an object.
+Source : Telerik.Sitefinity
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Telerik.Sitefinity.Model.IDataItem GetItemFromUrl(Telerik.Sitefinity.Data.IManager, System.String, System.String ByRef)
+HResult : -2147467261
+Stack Trace :    at Telerik.Sitefinity.Web.UI.ContentUI.ContentView.GetItemFromUrl(IManager manager, String itemUrl, String& redirectUrl)
+   at Telerik.Sitefinity.Web.UI.ContentUI.ContentView.ResolveDetailItemFromUrl()
+   at Telerik.Sitefinity.Web.UI.ContentUI.ContentView.ResolveDetailItem()
+   at Telerik.Sitefinity.Web.UI.ContentUI.ContentView.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at System.Web.UI.ControlCollection.Add(Control child)
+   at Telerik.Sitefinity.Modules.Pages.DraftProxyBase.editor_ControlAdd(Object sender, ZoneEditorEventArgs e)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/20/2015 8:45:55 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/2/ROOT-2-130898471464441834
+ThreadIdentity : admin
+WindowsIdentity : PRODCEAD\jz3350
+Requested URL : http://localhost:60876/Sitefinity/Pages/Action/Edit
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/2/ROOT-2-130898471464441834
+
+ProcessId: 3624
+
+Process Name: C:\Program Files (x86)\IIS Express\iisexpress.exe
+
+Thread Name: 
+
+Win32 ThreadId:3812
+
+Extended Properties: 
+----------------------------------------

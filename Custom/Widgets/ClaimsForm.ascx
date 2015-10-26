@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ClaimsForm.ascx.cs" Inherits="SitefinityWebApp.Custom.Widgets.ClaimsForm" %>
+<asp:Literal ID="Literal1" runat="server"></asp:Literal><br /><asp:TextBox ID="TextBox1" runat="server"><br /></asp:TextBox><asp:CheckBox ID="CheckBox1" runat="server" />

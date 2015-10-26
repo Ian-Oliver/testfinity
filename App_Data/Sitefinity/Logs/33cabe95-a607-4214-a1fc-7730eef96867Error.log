@@ -1,0 +1,150 @@
+----------------------------------------
+Timestamp: 10/16/2015 6:39:54 PM
+
+Message: HandlingInstanceID: 6f8103cf-cb76-4053-a2d2-60bef56bb1f2
+An exception of type 'Telerik.OpenAccess.OpenAccessException' occurred and was caught.
+--------------------------------------------------------------------------------------
+10/16/2015 14:39:54
+Type : Telerik.OpenAccess.OpenAccessException, Telerik.OpenAccess, Version=2015.2.624.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342
+Message : System.NullReferenceException: Object reference not set to an instance of an object.
+   at Telerik.OpenAccess.RT.Adonet2Generic.Impl.DBDriver.connect(ConnectionString connectionString, PropertySet driverProps, ConnectionPoolType poolType, LogEventStore pes)
+   at OpenAccessRuntime.Relational.sql.SqlDriver.InitializeFor(ConnectionString connectionString, Boolean noConnect, PropertySet props, DBDriver& driver, Connection& conn, ConnectionPoolType poolType)
+   at OpenAccessRuntime.Relational.RelationalStorageManagerFactory..ctor(StorageManagerFactoryBuilder b)
+   at OpenAccessRuntime.storagemanager.StorageManagerFactoryBuilder.createSmfForURL()
+Source : Unity_ILEmit_DynamicClasses
+Help link : 
+InnerExceptions : System.Exception[]
+FailedObject : 
+BackendError : 
+Reason : Internal
+CanRetry : False
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void Initialize(System.String, System.Collections.Specialized.NameValueCollection, System.Type)
+HResult : -2146233088
+Stack Trace :    at DynamicModule.ns.Wrapped_OpenAccessMetaDataProvider_6785076c33c2456e8d04ff4aee7325e8.Initialize(String providerName, NameValueCollection config, Type managerType)
+   at Telerik.Sitefinity.Data.ManagerBase`1.InstantiateProvider(IDataProviderSettings providerSettings, Type providerType, ExceptionPolicyName policy, ManagerBase`1 manager)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/16/2015 6:39:54 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/3/ROOT/SitefinityWebApp-2-130894943881148214
+ThreadIdentity : 
+WindowsIdentity : IIS APPPOOL\DefaultAppPool
+Requested URL : http://127.0.0.1/SitefinityWebApp/
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.OpenAccess.Runtime
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.OpenAccess.RT.sql.Connection connect(Telerik.OpenAccess.Config.Sql.ConnectionString, Telerik.OpenAccess.SPI.PropertySet, Telerik.OpenAccess.ConnectionPoolType, OpenAccessRuntime.logging.LogEventStore)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.OpenAccess.RT.Adonet2Generic.Impl.DBDriver.connect(ConnectionString connectionString, PropertySet driverProps, ConnectionPoolType poolType, LogEventStore pes)
+	   at OpenAccessRuntime.Relational.sql.SqlDriver.InitializeFor(ConnectionString connectionString, Boolean noConnect, PropertySet props, DBDriver& driver, Connection& conn, ConnectionPoolType poolType)
+	   at OpenAccessRuntime.Relational.RelationalStorageManagerFactory..ctor(StorageManagerFactoryBuilder b)
+	   at OpenAccessRuntime.storagemanager.StorageManagerFactoryBuilder.createSmfForURL()
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/3/ROOT/SitefinityWebApp-2-130894943881148214
+
+ProcessId: 3040
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:6816
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 10/16/2015 6:39:54 PM
+
+Message: HandlingInstanceID: 427f5fef-e0d6-4424-a5ea-c5f8d8764fc7
+An exception of type 'Telerik.OpenAccess.OpenAccessException' occurred and was caught.
+--------------------------------------------------------------------------------------
+10/16/2015 14:39:54
+Type : Telerik.OpenAccess.OpenAccessException, Telerik.OpenAccess, Version=2015.2.624.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342
+Message : System.NullReferenceException: Object reference not set to an instance of an object.
+   at Telerik.OpenAccess.RT.Adonet2Generic.Impl.DBDriver.connect(ConnectionString connectionString, PropertySet driverProps, ConnectionPoolType poolType, LogEventStore pes)
+   at OpenAccessRuntime.Relational.sql.SqlDriver.InitializeFor(ConnectionString connectionString, Boolean noConnect, PropertySet props, DBDriver& driver, Connection& conn, ConnectionPoolType poolType)
+   at OpenAccessRuntime.Relational.RelationalStorageManagerFactory..ctor(StorageManagerFactoryBuilder b)
+   at OpenAccessRuntime.storagemanager.StorageManagerFactoryBuilder.createSmfForURL()
+Source : Unity_ILEmit_DynamicClasses
+Help link : 
+InnerExceptions : System.Exception[]
+FailedObject : 
+BackendError : 
+Reason : Internal
+CanRetry : False
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void Initialize(System.String, System.Collections.Specialized.NameValueCollection, System.Type)
+HResult : -2146233088
+Stack Trace :    at DynamicModule.ns.Wrapped_OpenAccessMetaDataProvider_6785076c33c2456e8d04ff4aee7325e8.Initialize(String providerName, NameValueCollection config, Type managerType)
+   at Telerik.Sitefinity.Data.ManagerBase`1.InstantiateProvider(IDataProviderSettings providerSettings, Type providerType, ExceptionPolicyName policy, ManagerBase`1 manager)
+
+Additional Info:
+
+MachineName : L76MIA0U2071HKK
+TimeStamp : 10/16/2015 6:39:54 PM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5820.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/3/ROOT/SitefinityWebApp-2-130894943881148214
+ThreadIdentity : 
+WindowsIdentity : IIS APPPOOL\DefaultAppPool
+Requested URL : http://127.0.0.1/SitefinityWebApp/
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.OpenAccess.Runtime
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.OpenAccess.RT.sql.Connection connect(Telerik.OpenAccess.Config.Sql.ConnectionString, Telerik.OpenAccess.SPI.PropertySet, Telerik.OpenAccess.ConnectionPoolType, OpenAccessRuntime.logging.LogEventStore)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.OpenAccess.RT.Adonet2Generic.Impl.DBDriver.connect(ConnectionString connectionString, PropertySet driverProps, ConnectionPoolType poolType, LogEventStore pes)
+	   at OpenAccessRuntime.Relational.sql.SqlDriver.InitializeFor(ConnectionString connectionString, Boolean noConnect, PropertySet props, DBDriver& driver, Connection& conn, ConnectionPoolType poolType)
+	   at OpenAccessRuntime.Relational.RelationalStorageManagerFactory..ctor(StorageManagerFactoryBuilder b)
+	   at OpenAccessRuntime.storagemanager.StorageManagerFactoryBuilder.createSmfForURL()
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90030
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: L76MIA0U2071HKK
+
+App Domain: /LM/W3SVC/3/ROOT/SitefinityWebApp-2-130894943881148214
+
+ProcessId: 3040
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:6816
+
+Extended Properties: 
+----------------------------------------
